@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:story_shop/shared/theme.dart';
+import 'package:story_shop/ui/pages/home_page.dart';
 import 'package:story_shop/ui/pages/sign_up_page.dart';
 import 'package:story_shop/ui/widgets/custom_text_form_field.dart';
 
@@ -126,7 +127,14 @@ class _SignInPageState extends State<SignInPage> {
                 color: purpleColor,
               ),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HomePage(),
+                    ),
+                  );
+                },
                 child: Text(
                   'Login',
                   style: whiteTextStyle1.copyWith(

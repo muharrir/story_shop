@@ -34,6 +34,10 @@ class CustomTextFormField extends StatelessWidget {
           ),
           hintText: hintText,
           hintStyle: darkGreyTextStyle,
+          prefixIcon: Icon(
+            Icons.search,
+            color: darkGreyColor1,
+          ),
         ),
       ),
     );
